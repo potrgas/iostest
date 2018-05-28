@@ -137,8 +137,8 @@
 		3B805E0920BBCEAA00758016 /* iostestUITests */ = {
 			isa = PBXGroup;
 			children = (
-				3B805E0A20BBCEAA00758016 /* iostestUITests.m */,
 				3B805E0C20BBCEAA00758016 /* Info.plist */,
+				3B805E0A20BBCEAA00758016 /* iostestUITests.m */,
 			);
 			path = iostestUITests;
 			sourceTree = "<group>";
