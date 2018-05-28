@@ -53,7 +53,7 @@ class iOSBuilder(object):
         build_version_list = self._build_version.split('.')
         cf_bundle_short_version_string = '.'.join(build_version_list[:3])
         with open(self._plist_path, 'rb') as fp:
-            plist_content = plistlib.load(fp)
+            plist_content = plistlib.loads(fp)
             plist_content['CFBundleShortVersionString'] = cf_bundle_short_version_string
             plist_content['CFBundleVersion'] = self._build_version
         with open(self._plist_path, 'wb') as fp:
