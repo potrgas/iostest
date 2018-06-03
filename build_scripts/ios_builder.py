@@ -63,7 +63,7 @@ class iOSBuilder(object):
         process = subprocess.Popen(cmd_shell, shell=True)
         process.wait()
         return_code = process.returncode
-        assert return_code == 0
+        assert return_code == 0 , "rerurn_code = {}".format(rerurn_code)
 
     def _get_build_params(self, project, target, workspace, scheme):
         if project is None and workspace is None:
